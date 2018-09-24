@@ -1,0 +1,71 @@
+.sideMenu {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background: rgb(52, 72, 97);
+  left: 0;
+  top: 0;
+  overflow: auto;
+  z-index: 100;
+  -webkit-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+  -webkit-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.showSideMenu {
+  -webkit-transform: translate(0%, 0);
+  -ms-transform: translate(0%, 0);
+  transform: translate(0%, 0);
+}
+
+.menuFadeBackground {
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  right: 0px;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: visible;
+  transition: all 0.3s linear;
+}
+
+.menuFadeBackgroundHidden {
+  display: none;
+  transition: all 0.3s linear;
+}
+
+.sideItem {
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 10px 10px;
+  background: inherit;
+}
+
+.sideItemSeparator {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(250, 250, 250);
+}
+
+.sideItemHeader {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 0;
+  width: 100%;
+  color: rgb(250, 250, 250);
+}
+
+.sideItemHeader::after {
+  position: absolute;
+  content: "\25bc";
+  right: 5px;
+  color: inherit;
+}

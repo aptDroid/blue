@@ -1,2 +1,0 @@
-# blue
-Created with CodeSandbox
